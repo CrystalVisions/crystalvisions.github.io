@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://www.redbubble.com/people/SpareTimeGames/shop">
-  <title>Crystal Visions Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover colorful artwork from Crystal Visions Design. Explore our shops and find something that speaks to you.">
+  <meta http-equiv="refresh" content="6; url=https://www.redbubble.com/people/SpareTimeGames/shop">
+  <meta name="theme-color" content="#542775">
+  <title>Crystal Visions Design — Explore Our Shops</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; min-height: 100svh; display: grid;
+      place-items: center; padding: 48px 24px; color: #422552;
+      background: radial-gradient(ellipse at 12% 10%, #e5d4f2 0, transparent 55%),
+        radial-gradient(ellipse at 90% 85%, #f5dfba 0, transparent 50%), #faf5f0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(1120px, 100%); overflow: hidden; border: 1px solid white;
+      border-radius: 24px; background: #fffaf4;
+      box-shadow: 0 24px 80px #45225420; text-align: center;
+    }
+    .banner { display: block; width: 100%; height: auto; }
+    .welcome { padding: clamp(28px, 5vw, 56px) 24px 36px; }
+    .eyebrow { margin: 0 0 14px; font-size: .75rem; font-weight: 650; letter-spacing: .2em; text-transform: uppercase; color: #765584; }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; line-height: 1.2; }
+    .intro { margin: 18px auto 28px; max-width: 440px; color: #715e77; line-height: 1.7; }
+    .shops { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .shop {
+      display: inline-flex; align-items: center; justify-content: center; gap: 20px;
+      min-height: 56px; padding: 15px 28px; border-radius: 999px;
+      background: #542775; color: white; text-decoration: none; font-weight: 600;
+      box-shadow: 0 6px 20px #54277525;
+    }
+    .shop:hover { background: #713b94; }
+    .shop:focus-visible { outline: 3px solid #9964bc; outline-offset: 5px; }
+    .redirect { margin: 24px 0 0; font-size: .85rem; color: #79687e; line-height: 1.6; }
+    footer { margin-top: 32px; font-size: .75rem; letter-spacing: .04em; color: #806d86; }
+    @media (max-width: 600px) { body { padding: 24px 12px; } main { border-radius: 16px; } }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="https://www.redbubble.com/people/SpareTimeGames/shop">Crystal Visions Design on Redbubble</a>...</p>
+  <main>
+    <img class="banner" src="Crystal_Visions_Design_Redbubble_Cover.png" width="2400" height="600" alt="Crystal Visions Design — watercolor crystals, lavender, and colorful mandala designs">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <p class="eyebrow">Art for a colorful life</p>
+      <h1 id="welcome-title">A little wonder. A little color. Yours.</h1>
+      <p class="intro">Welcome to Crystal Visions Design.<br>Find artwork that brings a little joy to your everyday.</p>
+      <nav class="shops" aria-label="Our shops">
+        <a class="shop" href="https://www.redbubble.com/people/SpareTimeGames/shop">Explore on Redbubble <span aria-hidden="true">→</span></a>
+      </nav>
+      <p class="redirect">Taking you to our Redbubble shop in a few moments.<br>Or tap above to explore now.</p>
+      <footer>Crystal Visions Design</footer>
+    </section>
+  </main>
 </body>
 </html>
