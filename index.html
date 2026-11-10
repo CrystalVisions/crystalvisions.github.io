@@ -55,13 +55,22 @@
     </section>
   </main>
   <script>
+    const shopLink = document.querySelector('.shop');
+    /** Open the shop the same way for both a tap and the automatic timer. */
+    function redirectToShop() {
+      window.clearTimeout(redirectTimer);
+      window.location.replace(shopLink.href);
+    }
+    shopLink.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      redirectToShop();
+    });
     // Start the delay each time the page opens, including Home Screen restores.
     let redirectTimer;
     window.addEventListener('pageshow', () => {
       window.clearTimeout(redirectTimer);
-      redirectTimer = window.setTimeout(() => {
-        window.location.replace(document.querySelector('.shop').href);
-      }, 6000);
+      redirectTimer = window.setTimeout(redirectToShop, 6000);
     });
   </script>
 </body>
